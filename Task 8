@@ -1,0 +1,14 @@
+def cumulative_sum(*args):
+    total = 0
+    cumulative_sums = []
+
+    for arg in args:
+        total += arg
+        cumulative_sums.append(total)
+
+    return total, cumulative_sums
+
+# Example usage:
+result, cumulative_result = cumulative_sum(4, 5, 10)
+print("Total sum:", result)
+print("Cumulative sums:", cumulative_result)
